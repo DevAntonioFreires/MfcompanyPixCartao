@@ -94,7 +94,10 @@ export default function ProductCard({ product, index, onClick }) {
         <div className={styles.footer}>
           <div className={styles.price}>
             <span>{product.priceCard}</span>
-            <span className={styles.pricePixel}>{product.pricePixel}</span>
+            <div className={styles.pricePixel}>
+              <span>{product.pricePixel}</span>
+              <small>Pagamento via PIX</small>
+            </div>
           </div>
           <button
             className={styles.iconBtn}

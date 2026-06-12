@@ -254,9 +254,25 @@
 }
 
 .price .pricePixel {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   font-size: 0.9rem;
   color: var(--text-muted);
   font-family: var(--font-body);
+}
+
+.price .pricePixel span {
+  font-size: 1.4rem;
+  color: var(--white);
+  font-family: var(--font-display);
+}
+
+.price .pricePixel small {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 768px) {
@@ -266,8 +282,14 @@
   .price span {
     font-size: 1.2rem;
   }
+  .price .pricePixel span {
+    font-size: 1.2rem;
+  }
   .price .pricePixel {
     font-size: 0.85rem;
+  }
+  .price .pricePixel small {
+    font-size: 0.65rem;
   }
 }
 
@@ -278,8 +300,14 @@
   .price span {
     font-size: 1.1rem;
   }
+  .price .pricePixel span {
+    font-size: 1.1rem;
+  }
   .price .pricePixel {
     font-size: 0.8rem;
+  }
+  .price .pricePixel small {
+    font-size: 0.6rem;
   }
 }
 .iconBtn {

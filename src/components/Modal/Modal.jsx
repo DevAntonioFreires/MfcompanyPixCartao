@@ -84,7 +84,10 @@ export default function Modal({ product, onClose }) {
           <h2 className={styles.name}>{product.name}</h2>
           <div className={styles.price}>
             <p className={styles.priceCard}>Cartão: {product.priceCard}</p>
-            <p className={styles.pricePixel}>PIX: {product.pricePixel}</p>
+            <div className={styles.pricePixel}>
+              <p>PIX: {product.pricePixel}</p>
+              <small>Pagamento via PIX</small>
+            </div>
           </div>
           <p className={styles.desc}>{product.description}</p>
 

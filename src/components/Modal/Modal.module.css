@@ -177,9 +177,20 @@
   font-size: 1.9rem;
 }
 .pricePixel {
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pricePixel p {
+  font-size: 1.9rem;
+  margin: 0;
+}
+.pricePixel small {
+  font-size: 0.75rem;
   color: var(--text-muted);
   font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 .desc {
   font-size: 0.88rem;
